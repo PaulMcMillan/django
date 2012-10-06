@@ -1,17 +1,16 @@
 from __future__ import unicode_literals
 
-from django.http import HttpResponse, Http404
-from django.template import loader
+from django.contrib.gis.db.models.fields import GeometryField
+from django.contrib.gis.shortcuts import render_to_kml, render_to_kmz
 from django.contrib.sites.models import get_current_site
 from django.core import urlresolvers
 from django.core.paginator import EmptyPage, PageNotAnInteger
-from django.contrib.gis.db.models.fields import GeometryField
 from django.db import connections, DEFAULT_DB_ALIAS
 from django.db.models import get_model
+from django.http import HttpResponse, Http404
+from django.template import loader
 from django.utils import six
 from django.utils.translation import ugettext as _
-
-from django.contrib.gis.shortcuts import render_to_kml, render_to_kmz
 
 def index(request, sitemaps):
     """

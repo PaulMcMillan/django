@@ -5,7 +5,6 @@ import warnings
 from django.contrib.localflavor.ca.forms import (CAPostalCodeField,
         CAPhoneNumberField, CAProvinceField, CAProvinceSelect,
         CASocialInsuranceNumberField)
-
 from django.test import SimpleTestCase
 
 

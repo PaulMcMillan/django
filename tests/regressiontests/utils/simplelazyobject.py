@@ -5,8 +5,8 @@ import pickle
 
 from django.test.utils import str_prefix
 from django.utils import six
-from django.utils.unittest import TestCase
 from django.utils.functional import SimpleLazyObject, empty
+from django.utils.unittest import TestCase
 
 
 class _ComplexObject(object):

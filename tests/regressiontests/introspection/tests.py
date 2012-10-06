@@ -5,7 +5,6 @@ from functools import update_wrapper
 from django.db import connection
 from django.test import TestCase, skipUnlessDBFeature, skipIfDBFeature
 from django.utils import six
-
 from .models import Reporter, Article
 
 #

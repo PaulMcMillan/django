@@ -1,7 +1,7 @@
-from django.contrib.redirects.models import Redirect
-from django.contrib.sites.models import get_current_site
 from django import http
 from django.conf import settings
+from django.contrib.redirects.models import Redirect
+from django.contrib.sites.models import get_current_site
 
 class RedirectFallbackMiddleware(object):
     def process_response(self, request, response):

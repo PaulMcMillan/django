@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 import datetime
 
 from django.contrib.localflavor.generic.forms import DateField, DateTimeField
-
 from django.test import SimpleTestCase
 
 

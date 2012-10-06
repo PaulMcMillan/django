@@ -2,7 +2,6 @@ from __future__ import absolute_import, unicode_literals
 
 from django.test import TestCase
 from django.utils import six
-
 from .models import (Building, Child, Device, Port, Item, Country, Connection,
     ClientStatus, State, Client, SpecialClient, TUser, Person, Student,
     Organizer, Class, Enrollment)

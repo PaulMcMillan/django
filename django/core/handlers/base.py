@@ -6,9 +6,9 @@ import types
 
 from django import http
 from django.core import signals
+from django.utils import six
 from django.utils.encoding import force_text
 from django.utils.importlib import import_module
-from django.utils import six
 
 logger = logging.getLogger('django.request')
 

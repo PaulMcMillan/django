@@ -1,7 +1,7 @@
 from django.template import VariableNode, Context
 from django.template.loader import get_template_from_string
-from django.utils.unittest import TestCase
 from django.test.utils import override_settings
+from django.utils.unittest import TestCase
 
 class NodelistTest(TestCase):
 

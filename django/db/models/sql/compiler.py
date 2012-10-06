@@ -1,5 +1,3 @@
-from django.utils.six.moves import zip
-
 from django.core.exceptions import FieldError
 from django.db import transaction
 from django.db.backends.util import truncate_name
@@ -12,6 +10,7 @@ from django.db.models.sql.expressions import SQLEvaluator
 from django.db.models.sql.query import get_order_dir, Query
 from django.db.utils import DatabaseError
 from django.utils import six
+from django.utils.six.moves import zip
 
 
 class SQLCompiler(object):

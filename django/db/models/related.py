@@ -1,5 +1,5 @@
-from django.utils.encoding import smart_text
 from django.db.models.fields import BLANK_CHOICE_DASH
+from django.utils.encoding import smart_text
 
 class BoundRelatedObject(object):
     def __init__(self, related_object, field_mapping, original):

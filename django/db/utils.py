@@ -3,8 +3,8 @@ from threading import local
 
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
-from django.utils.importlib import import_module
 from django.utils import six
+from django.utils.importlib import import_module
 
 
 DEFAULT_DB_ALIAS = 'default'

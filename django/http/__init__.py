@@ -2,13 +2,12 @@ from __future__ import absolute_import, unicode_literals
 
 import copy
 import datetime
-from email.header import Header
 import os
 import re
 import sys
 import time
 import warnings
-
+from email.header import Header
 from io import BytesIO
 from pprint import pformat
 try:

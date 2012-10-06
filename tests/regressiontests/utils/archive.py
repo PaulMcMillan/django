@@ -1,8 +1,8 @@
 import os
 import shutil
 import tempfile
-from django.utils import unittest
 
+from django.utils import unittest
 from django.utils.archive import Archive, extract
 
 

@@ -9,10 +9,9 @@ from django.contrib.sitemaps import Sitemap, GenericSitemap
 from django.contrib.sites.models import Site
 from django.core.exceptions import ImproperlyConfigured
 from django.test.utils import override_settings
-from django.utils.unittest import skipUnless
 from django.utils.formats import localize
 from django.utils.translation import activate, deactivate
-
+from django.utils.unittest import skipUnless
 from .base import SitemapTestsBase
 
 

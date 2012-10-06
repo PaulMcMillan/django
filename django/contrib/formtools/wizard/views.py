@@ -1,17 +1,16 @@
 import re
 
 from django import forms
-from django.shortcuts import redirect
-from django.core.urlresolvers import reverse
-from django.forms import formsets, ValidationError
-from django.views.generic import TemplateView
-from django.utils.datastructures import SortedDict
-from django.utils.decorators import classonlymethod
-from django.utils import six
-
+from django.contrib.formtools.wizard.forms import ManagementForm
 from django.contrib.formtools.wizard.storage import get_storage
 from django.contrib.formtools.wizard.storage.exceptions import NoFileStorageConfigured
-from django.contrib.formtools.wizard.forms import ManagementForm
+from django.core.urlresolvers import reverse
+from django.forms import formsets, ValidationError
+from django.shortcuts import redirect
+from django.utils import six
+from django.utils.datastructures import SortedDict
+from django.utils.decorators import classonlymethod
+from django.views.generic import TemplateView
 
 
 def normalize_name(name):

@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from django.contrib import admin
 from django.core.exceptions import ImproperlyConfigured
 from django.test import TestCase
-
 from .models import Person, Place, Location
 
 

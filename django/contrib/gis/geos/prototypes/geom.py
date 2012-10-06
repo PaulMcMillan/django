@@ -1,4 +1,5 @@
 from ctypes import c_char_p, c_int, c_size_t, c_ubyte, POINTER
+
 from django.contrib.gis.geos.libgeos import CS_PTR, GEOM_PTR
 from django.contrib.gis.geos.prototypes.errcheck import (
     check_geom, check_minus_one, check_sized_string, check_string, check_zero)

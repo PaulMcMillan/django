@@ -1,6 +1,7 @@
-from django.core import urlresolvers
-from regressiontests.comment_tests.custom_comments.models import CustomComment 
 from regressiontests.comment_tests.custom_comments.forms import CustomCommentForm
+from regressiontests.comment_tests.custom_comments.models import CustomComment 
+
+from django.core import urlresolvers
 
 def get_model():
     return CustomComment 

@@ -4,6 +4,7 @@ import codecs
 import os
 import sys
 from optparse import make_option
+
 from django.core.management.base import BaseCommand, CommandError
 
 def has_bom(fn):

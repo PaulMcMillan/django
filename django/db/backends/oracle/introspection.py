@@ -1,6 +1,8 @@
-from django.db.backends import BaseDatabaseIntrospection
-import cx_Oracle
 import re
+
+import cx_Oracle
+
+from django.db.backends import BaseDatabaseIntrospection
 
 foreign_key_re = re.compile(r"\sCONSTRAINT `[^`]*` FOREIGN KEY \(`([^`]*)`\) REFERENCES `([^`]*)` \(`([^`]*)`\)")
 

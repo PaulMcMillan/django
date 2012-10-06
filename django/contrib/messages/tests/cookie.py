@@ -1,10 +1,10 @@
 import json
 
 from django.contrib.messages import constants
-from django.contrib.messages.tests.base import BaseTest
+from django.contrib.messages.storage.base import Message
 from django.contrib.messages.storage.cookie import (CookieStorage,
     MessageEncoder, MessageDecoder)
-from django.contrib.messages.storage.base import Message
+from django.contrib.messages.tests.base import BaseTest
 from django.test.utils import override_settings
 
 

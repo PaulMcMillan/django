@@ -1,11 +1,10 @@
 from __future__ import absolute_import
 
-from datetime import date
 import traceback
+from datetime import date
 
 from django.db import IntegrityError
 from django.test import TestCase
-
 from .models import Person, ManualPrimaryKeyTest
 
 

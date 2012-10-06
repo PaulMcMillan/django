@@ -5,10 +5,10 @@ from __future__ import absolute_import, unicode_literals
 import os
 import re
 
-from django.core.serializers.base import DeserializationError
 from django.core import management
 from django.core.management.base import CommandError
 from django.core.management.commands.dumpdata import sort_dependencies
+from django.core.serializers.base import DeserializationError
 from django.db import transaction, IntegrityError
 from django.db.models import signals
 from django.test import (TestCase, TransactionTestCase, skipIfDBFeature,
@@ -16,7 +16,6 @@ from django.test import (TestCase, TransactionTestCase, skipIfDBFeature,
 from django.test.utils import override_settings
 from django.utils import six
 from django.utils.six import PY3, StringIO
-
 from .models import (Animal, Stuff, Absolute, Parent, Child, Article, Widget,
     Store, Person, Book, NKChild, RefToNKChild, Circle1, Circle2, Circle3,
     ExternalDependency, Thingy)

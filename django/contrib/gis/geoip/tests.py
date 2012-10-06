@@ -1,12 +1,12 @@
 from __future__ import unicode_literals
 
 import os
-from django.conf import settings
-from django.contrib.gis.geos import GEOSGeometry
-from django.contrib.gis.geoip import GeoIP, GeoIPException
-from django.utils import unittest
 
+from django.conf import settings
+from django.contrib.gis.geoip import GeoIP, GeoIPException
+from django.contrib.gis.geos import GEOSGeometry
 from django.utils import six
+from django.utils import unittest
 
 # Note: Requires use of both the GeoIP country and city datasets.
 # The GEOIP_DATA path should be the only setting set (the directory

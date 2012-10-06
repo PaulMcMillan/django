@@ -1,9 +1,8 @@
 from __future__ import absolute_import, unicode_literals
 
-from django.test import TestCase, RequestFactory
 from django.contrib.admin.options import ModelAdmin
 from django.contrib.auth.models import User
-
+from django.test import TestCase, RequestFactory
 from .models import (Band, Song, SongInlineDefaultOrdering,
     SongInlineNewOrdering, DynOrderingBandAdmin)
 

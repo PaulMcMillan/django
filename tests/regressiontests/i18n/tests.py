@@ -6,12 +6,14 @@ import decimal
 import os
 import pickle
 from threading import local
+from .commands.tests import can_run_extraction_tests, can_run_compilation_tests
 
 from django.conf import settings
 from django.template import Template, Context
 from django.template.base import TemplateSyntaxError
 from django.test import TestCase, RequestFactory
 from django.test.utils import override_settings
+from django.utils import six
 from django.utils import translation
 from django.utils.formats import (get_format, date_format, time_format,
     localize, localize_input, iter_format_modules, get_format_modules,
@@ -19,14 +21,10 @@ from django.utils.formats import (get_format, date_format, time_format,
 from django.utils.importlib import import_module
 from django.utils.numberformat import format as nformat
 from django.utils.safestring import mark_safe, SafeBytes, SafeString, SafeText
-from django.utils import six
 from django.utils.six import PY3
 from django.utils.translation import (ugettext, ugettext_lazy, activate,
     deactivate, gettext_lazy, pgettext, npgettext, to_locale,
     get_language_info, get_language, get_language_from_request)
-
-
-from .commands.tests import can_run_extraction_tests, can_run_compilation_tests
 if can_run_extraction_tests:
     from .commands.extraction import (ExtractorTests, BasicExtractorTests,
         JavascriptExtractorTests, IgnoredExtractorTests, SymlinkExtractorTests,

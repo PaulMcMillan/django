@@ -7,7 +7,6 @@ from django.template.loader import render_to_string
 from django.test import SimpleTestCase, TestCase, skipUnlessDBFeature
 from django.utils import six
 from django.utils.unittest import skip
-
 from .models import Person
 
 

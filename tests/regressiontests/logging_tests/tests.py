@@ -4,14 +4,14 @@ import copy
 import logging
 import warnings
 
+from ..admin_scripts.tests import AdminScriptTestCase
+
 from django.conf import compat_patch_logging_config
 from django.core import mail
 from django.test import TestCase, RequestFactory
 from django.test.utils import override_settings
 from django.utils.log import CallbackFilter, RequireDebugFalse
 from django.utils.six import StringIO
-
-from ..admin_scripts.tests import AdminScriptTestCase
 
 
 # logging config prior to using filter with mail_admins

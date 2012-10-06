@@ -8,20 +8,19 @@ import shutil
 import sys
 import tempfile
 
-from django.template import loader, Context
 from django.conf import settings
+from django.contrib.staticfiles import finders, storage
 from django.core.cache.backends.base import BaseCache
 from django.core.exceptions import ImproperlyConfigured
 from django.core.files.storage import default_storage
 from django.core.management import call_command
+from django.template import loader, Context
 from django.test import TestCase
 from django.test.utils import override_settings
+from django.utils import six
+from django.utils._os import rmtree_errorhandler
 from django.utils.encoding import smart_text
 from django.utils.functional import empty
-from django.utils._os import rmtree_errorhandler
-from django.utils import six
-
-from django.contrib.staticfiles import finders, storage
 
 TEST_ROOT = os.path.dirname(__file__)
 TEST_SETTINGS = {

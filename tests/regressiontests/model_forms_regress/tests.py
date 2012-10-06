@@ -7,10 +7,9 @@ from django.core.exceptions import FieldError, ValidationError
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.forms.models import (modelform_factory, ModelChoiceField,
     fields_for_model, construct_instance, ModelFormMetaclass)
+from django.test import TestCase
 from django.utils import six
 from django.utils import unittest
-from django.test import TestCase
-
 from .models import (Person, RealPerson, Triple, FilePathModel, Article,
     Publication, CustomFF, Author, Author1, Homepage, Document, Edition)
 

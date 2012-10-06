@@ -1,11 +1,12 @@
 from __future__ import unicode_literals
 
-import sys
-import os
 import gzip
-import zipfile
-from optparse import make_option
+import os
+import sys
 import traceback
+import zipfile
+from itertools import product
+from optparse import make_option
 
 from django.conf import settings
 from django.core import serializers
@@ -15,7 +16,6 @@ from django.db import (connections, router, transaction, DEFAULT_DB_ALIAS,
       IntegrityError, DatabaseError)
 from django.db.models import get_apps
 from django.utils.encoding import force_text
-from itertools import product
 
 try:
     import bz2

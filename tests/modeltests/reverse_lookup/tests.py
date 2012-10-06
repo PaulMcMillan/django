@@ -2,7 +2,6 @@ from __future__ import absolute_import
 
 from django.core.exceptions import FieldError
 from django.test import TestCase
-
 from .models import User, Poll, Choice
 
 

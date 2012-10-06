@@ -2,7 +2,6 @@ from __future__ import absolute_import
 
 from django.conf.urls import patterns, url
 from django.contrib.comments.feeds import LatestCommentFeed
-
 from .custom_comments import views
 
 

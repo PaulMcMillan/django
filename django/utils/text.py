@@ -6,12 +6,12 @@ import warnings
 from gzip import GzipFile
 from io import BytesIO
 
+from django.utils import six
 from django.utils.encoding import force_text
 from django.utils.functional import allow_lazy, SimpleLazyObject
-from django.utils import six
+from django.utils.safestring import mark_safe
 from django.utils.six.moves import html_entities
 from django.utils.translation import ugettext_lazy, ugettext as _, pgettext
-from django.utils.safestring import mark_safe
 
 if not six.PY3:
     # Import force_unicode even though this module doesn't use it, because some

@@ -2,14 +2,14 @@ import datetime
 import os
 
 from django import forms
-from django.db.models.fields import Field
 from django.core.exceptions import ValidationError
 from django.core.files.base import File
-from django.core.files.storage import default_storage
 from django.core.files.images import ImageFile
+from django.core.files.storage import default_storage
 from django.db.models import signals
-from django.utils.encoding import force_str, force_text
+from django.db.models.fields import Field
 from django.utils import six
+from django.utils.encoding import force_str, force_text
 from django.utils.translation import ugettext_lazy as _
 
 class FieldFile(File):

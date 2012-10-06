@@ -1,4 +1,5 @@
 import cx_Oracle
+
 from django.db.backends.oracle.introspection import DatabaseIntrospection
 
 class OracleIntrospection(DatabaseIntrospection):

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import gzip
-import re
 import random
+import re
 from io import BytesIO
 
 from django.conf import settings
@@ -11,8 +11,8 @@ from django.http import HttpRequest
 from django.http import HttpResponse
 from django.middleware.clickjacking import XFrameOptionsMiddleware
 from django.middleware.common import CommonMiddleware
-from django.middleware.http import ConditionalGetMiddleware
 from django.middleware.gzip import GZipMiddleware
+from django.middleware.http import ConditionalGetMiddleware
 from django.test import TestCase, RequestFactory
 from django.test.utils import override_settings
 from django.utils import six

@@ -3,11 +3,9 @@ from __future__ import absolute_import, unicode_literals
 from django import forms
 from django.core.exceptions import NON_FIELD_ERRORS
 from django.test import TestCase
-
 from . import ValidationTestCase
 from .models import (Author, Article, ModelToValidate,
     GenericIPAddressTestModel, GenericIPAddrUnpackUniqueTest)
-
 # Import other tests for this package.
 from .test_custom_messages import CustomMessagesTest
 from .test_error_messages import ValidationMessagesTest

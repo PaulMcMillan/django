@@ -4,7 +4,6 @@ from __future__ import absolute_import, unicode_literals
 from django.contrib.localflavor.mx.forms import (MXZipCodeField, MXRFCField,
     MXStateSelect, MXCURPField)
 from django.test import SimpleTestCase
-
 from .forms import MXPersonProfileForm
 
 

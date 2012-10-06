@@ -1,4 +1,5 @@
 import os
+
 from django.conf import settings
 from django.contrib.auth.models import AnonymousUser, User
 from django.template import Template, Context, TemplateSyntaxError

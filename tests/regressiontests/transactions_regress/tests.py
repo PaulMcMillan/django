@@ -5,7 +5,6 @@ from django.db.transaction import commit_on_success, commit_manually, Transactio
 from django.test import TransactionTestCase, skipUnlessDBFeature
 from django.test.utils import override_settings
 from django.utils.unittest import skipIf, skipUnless
-
 from .models import Mod, M2mA, M2mB
 
 

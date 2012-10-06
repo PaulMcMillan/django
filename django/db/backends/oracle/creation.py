@@ -1,5 +1,6 @@
 import sys
 import time
+
 from django.db.backends.creation import BaseDatabaseCreation
 from django.utils.six.moves import input
 

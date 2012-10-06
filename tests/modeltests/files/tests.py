@@ -11,7 +11,6 @@ from django.core.files.base import ContentFile
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.utils import unittest
-
 from .models import Storage, temp_storage, temp_storage_location
 
 

@@ -1,15 +1,16 @@
 from __future__ import unicode_literals
+
 import datetime
 
 from django.contrib.humanize.templatetags import humanize
 from django.template import Template, Context, defaultfilters
 from django.test import TestCase
 from django.test.utils import override_settings
+from django.utils import translation
+from django.utils import tzinfo
 from django.utils.html import escape
 from django.utils.timezone import utc
-from django.utils import translation
 from django.utils.translation import ugettext as _
-from django.utils import tzinfo
 
 
 # Mock out datetime in some tests so they don't fail occasionally when they

@@ -7,15 +7,13 @@ from django.contrib.gis.gdal.envelope import Envelope, OGREnvelope
 from django.contrib.gis.gdal.error import OGRException, OGRIndexError, SRSException
 from django.contrib.gis.gdal.feature import Feature
 from django.contrib.gis.gdal.field import OGRFieldTypes
-from django.contrib.gis.gdal.geomtype import OGRGeomType
 from django.contrib.gis.gdal.geometries import OGRGeometry
-from django.contrib.gis.gdal.srs import SpatialReference
-
+from django.contrib.gis.gdal.geomtype import OGRGeomType
 # GDAL ctypes function prototypes.
 from django.contrib.gis.gdal.prototypes import ds as capi, geom as geom_api, srs as srs_api
-
-from django.utils.encoding import force_bytes
+from django.contrib.gis.gdal.srs import SpatialReference
 from django.utils import six
+from django.utils.encoding import force_bytes
 from django.utils.six.moves import xrange
 
 # For more information, see the OGR C API source code:

@@ -3,8 +3,8 @@ import json
 from django.conf import settings
 from django.contrib.messages.storage.base import BaseStorage, Message
 from django.http import SimpleCookie
-from django.utils.crypto import salted_hmac, constant_time_compare
 from django.utils import six
+from django.utils.crypto import salted_hmac, constant_time_compare
 
 
 class MessageEncoder(json.JSONEncoder):

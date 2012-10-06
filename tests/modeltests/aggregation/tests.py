@@ -5,7 +5,6 @@ from decimal import Decimal
 
 from django.db.models import Avg, Sum, Count, Max, Min
 from django.test import TestCase, Approximate
-
 from .models import Author, Publisher, Book, Store
 
 

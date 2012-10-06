@@ -1,5 +1,5 @@
-import os
 import errno
+import os
 try:
     from urllib.parse import urljoin
 except ImportError:     # Python 2

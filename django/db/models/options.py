@@ -4,16 +4,16 @@ import re
 from bisect import bisect
 
 from django.conf import settings
-from django.db.models.related import RelatedObject
-from django.db.models.fields.related import ManyToManyRel
 from django.db.models.fields import AutoField, FieldDoesNotExist
 from django.db.models.fields.proxy import OrderWrt
+from django.db.models.fields.related import ManyToManyRel
 from django.db.models.loading import get_models, app_cache_ready
-from django.utils.translation import activate, deactivate_all, get_language, string_concat
-from django.utils.encoding import force_text, smart_text
-from django.utils.datastructures import SortedDict
+from django.db.models.related import RelatedObject
 from django.utils import six
+from django.utils.datastructures import SortedDict
+from django.utils.encoding import force_text, smart_text
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.translation import activate, deactivate_all, get_language, string_concat
 
 # Calculate the verbose_name by converting from InitialCaps to "lowercase with spaces".
 get_verbose_name = lambda class_name: re.sub('(((?<=[a-z])[A-Z])|([A-Z](?![A-Z]|$)))', ' \\1', class_name).lower().strip()

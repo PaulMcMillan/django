@@ -1,9 +1,9 @@
 from __future__ import unicode_literals
 
-import sys
+import mimetypes
 import os
 import re
-import mimetypes
+import sys
 from copy import copy
 from io import BytesIO
 try:

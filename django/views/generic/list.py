@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
-from django.core.paginator import Paginator, InvalidPage
 from django.core.exceptions import ImproperlyConfigured
+from django.core.paginator import Paginator, InvalidPage
 from django.http import Http404
 from django.utils.translation import ugettext as _
 from django.views.generic.base import TemplateResponseMixin, ContextMixin, View

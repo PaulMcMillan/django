@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 
 from django.contrib.auth.models import User
-from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
+from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 

@@ -4,9 +4,9 @@ import os
 
 from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import reverse, clear_url_caches
+from django.template import Template, Context
 from django.test import TestCase
 from django.test.utils import override_settings
-from django.template import Template, Context
 from django.utils import translation
 
 

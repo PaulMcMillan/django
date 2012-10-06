@@ -1,19 +1,20 @@
 from functools import update_wrapper
-from django.http import Http404, HttpResponseRedirect
+
+from django.conf import settings
 from django.contrib.admin import ModelAdmin, actions
 from django.contrib.admin.forms import AdminAuthenticationForm
 from django.contrib.auth import REDIRECT_FIELD_NAME
 from django.contrib.contenttypes import views as contenttype_views
-from django.views.decorators.csrf import csrf_protect
-from django.db.models.base import ModelBase
 from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import reverse, NoReverseMatch
+from django.db.models.base import ModelBase
+from django.http import Http404, HttpResponseRedirect
 from django.template.response import TemplateResponse
 from django.utils import six
 from django.utils.text import capfirst
 from django.utils.translation import ugettext as _
 from django.views.decorators.cache import never_cache
-from django.conf import settings
+from django.views.decorators.csrf import csrf_protect
 
 LOGIN_FORM_KEY = 'this_is_the_login_form'
 

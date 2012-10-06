@@ -1,9 +1,8 @@
-from django.test import TestCase
-
 from django.contrib.formtools.wizard.storage import (get_storage,
                                                      MissingStorageModule,
                                                      MissingStorageClass)
 from django.contrib.formtools.wizard.storage.base import BaseStorage
+from django.test import TestCase
 
 
 class TestLoadStorage(TestCase):

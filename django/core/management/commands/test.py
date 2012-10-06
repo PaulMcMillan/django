@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 from optparse import make_option, OptionParser
 
 from django.conf import settings

@@ -1,4 +1,5 @@
 from ctypes import c_char
+
 from django.contrib.gis.geos.libgeos import GEOM_PTR, PREPGEOM_PTR
 from django.contrib.gis.geos.prototypes.errcheck import check_predicate
 from django.contrib.gis.geos.prototypes.threadsafe import GEOSFunc

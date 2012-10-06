@@ -1,22 +1,21 @@
 from __future__ import absolute_import,unicode_literals
 
 import datetime
-from operator import attrgetter
 import pickle
 import sys
+from operator import attrgetter
 
 from django.conf import settings
 from django.core.exceptions import FieldError
 from django.db import DatabaseError, connection, connections, DEFAULT_DB_ALIAS
 from django.db.models import Count
 from django.db.models.query import Q, ITER_CHUNK_SIZE, EmptyQuerySet
-from django.db.models.sql.where import WhereNode, EverythingNode, NothingNode
 from django.db.models.sql.datastructures import EmptyResultSet
+from django.db.models.sql.where import WhereNode, EverythingNode, NothingNode
 from django.test import TestCase, skipUnlessDBFeature
 from django.test.utils import str_prefix
 from django.utils import unittest
 from django.utils.datastructures import SortedDict
-
 from .models import (Annotation, Article, Author, Celebrity, Child, Cover,
     Detail, DumbCategory, ExtraInfo, Fan, Item, LeafA, LoopX, LoopZ,
     ManagedModel, Member, NamedCategory, Note, Number, Plaything, PointerA,

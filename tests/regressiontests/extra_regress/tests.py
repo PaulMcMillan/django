@@ -5,7 +5,6 @@ import datetime
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.utils.datastructures import SortedDict
-
 from .models import TestObject, Order, RevisionableModel
 
 

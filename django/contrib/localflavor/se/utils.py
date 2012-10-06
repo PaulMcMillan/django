@@ -1,4 +1,5 @@
 import datetime
+
 from django.utils import six
 
 def id_number_checksum(gd):

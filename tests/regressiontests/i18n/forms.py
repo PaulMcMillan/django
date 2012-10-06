@@ -2,7 +2,6 @@ from __future__ import absolute_import
 
 from django import forms
 from django.forms.extras import SelectDateWidget
-
 from .models import Company
 
 

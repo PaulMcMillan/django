@@ -1,5 +1,5 @@
-from django.db import models
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, AbstractUser, UserManager
+from django.db import models
 
 
 # The custom User uses email as the unique identifier, and requires

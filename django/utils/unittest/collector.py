@@ -1,5 +1,6 @@
 import os
 import sys
+
 from django.utils.unittest.loader import defaultTestLoader
 
 def collector():

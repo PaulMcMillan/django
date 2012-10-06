@@ -1,7 +1,7 @@
 from django.contrib.contenttypes.models import ContentType
 from django.db.models import get_apps, get_models, signals
-from django.utils.encoding import smart_text
 from django.utils import six
+from django.utils.encoding import smart_text
 from django.utils.six.moves import input
 
 def update_contenttypes(app, created_models, verbosity=2, **kwargs):

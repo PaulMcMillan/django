@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
-from django.contrib.webdesign.lorem_ipsum import words, paragraphs
 from django import template
+from django.contrib.webdesign.lorem_ipsum import words, paragraphs
 
 register = template.Library()
 

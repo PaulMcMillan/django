@@ -1,9 +1,9 @@
-from optparse import make_option
-from datetime import datetime
 import os
 import re
-import sys
 import socket
+import sys
+from datetime import datetime
+from optparse import make_option
 
 from django.core.management.base import BaseCommand, CommandError
 from django.core.servers.basehttp import run, WSGIServerException, get_internal_wsgi_application

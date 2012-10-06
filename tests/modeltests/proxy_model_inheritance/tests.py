@@ -8,7 +8,6 @@ from django.core.management import call_command
 from django.db.models.loading import cache, load_app
 from django.test import TestCase, TransactionTestCase
 from django.test.utils import override_settings
-
 from .models import (ConcreteModel, ConcreteModelSubclass,
     ConcreteModelSubclassProxy)
 

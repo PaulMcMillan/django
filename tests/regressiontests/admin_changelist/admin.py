@@ -2,7 +2,6 @@ from __future__ import absolute_import
 
 from django.contrib import admin
 from django.core.paginator import Paginator
-
 from .models import (Event, Child, Parent, Genre, Band, Musician, Group,
     Quartet, Membership, ChordsMusician, ChordsBand, Invitation, Swallow)
 

@@ -1,4 +1,5 @@
 import warnings
+
 from django.template import Library
 from django.templatetags.static import PrefixNode
 

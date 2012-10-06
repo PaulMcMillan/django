@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from django.http import Http404
 from django.shortcuts import get_object_or_404, get_list_or_404
 from django.test import TestCase
-
 from .models import Author, Article
 
 

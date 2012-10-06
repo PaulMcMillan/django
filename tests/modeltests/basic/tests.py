@@ -7,7 +7,6 @@ from django.db.models.fields import Field, FieldDoesNotExist
 from django.test import TestCase, skipIfDBFeature, skipUnlessDBFeature
 from django.utils import six
 from django.utils.translation import ugettext_lazy
-
 from .models import Article
 
 

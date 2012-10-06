@@ -5,7 +5,6 @@ from operator import attrgetter
 from django.core.exceptions import FieldError
 from django.test import TestCase
 from django.utils import six
-
 from .models import (Chef, CommonInfo, ItalianRestaurant, ParkingLot, Place,
     Post, Restaurant, Student, StudentWorker, Supplier, Worker, MixinModel)
 

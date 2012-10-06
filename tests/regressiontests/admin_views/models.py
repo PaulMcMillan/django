@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 
 import datetime
-import tempfile
 import os
+import tempfile
 
 from django.contrib.auth.models import User
 from django.contrib.contenttypes import generic

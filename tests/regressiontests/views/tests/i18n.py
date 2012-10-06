@@ -4,14 +4,14 @@ from __future__ import absolute_import
 import gettext
 from os import path
 
+from ..urls import locale_dir
+
 from django.conf import settings
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.utils import six
-from django.utils.translation import override, get_language
 from django.utils.text import javascript_quote
-
-from ..urls import locale_dir
+from django.utils.translation import override, get_language
 
 
 class I18NTests(TestCase):

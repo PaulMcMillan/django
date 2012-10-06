@@ -10,9 +10,8 @@ from django.core import serializers
 from django.db import transaction, connection
 from django.test import TestCase, TransactionTestCase, Approximate
 from django.utils import six
-from django.utils.six import StringIO
 from django.utils import unittest
-
+from django.utils.six import StringIO
 from .models import (Category, Author, Article, AuthorProfile, Actor, Movie,
     Score, Player, Team)
 

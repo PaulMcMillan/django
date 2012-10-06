@@ -4,8 +4,8 @@ from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.db.models import get_app, get_apps
 from django.test import _doctest as doctest
-from django.test.utils import setup_test_environment, teardown_test_environment
 from django.test.testcases import OutputChecker, DocTestRunner
+from django.test.utils import setup_test_environment, teardown_test_environment
 from django.utils import unittest
 from django.utils.importlib import import_module
 from django.utils.module_loading import module_has_submodule

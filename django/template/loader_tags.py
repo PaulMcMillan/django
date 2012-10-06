@@ -2,8 +2,8 @@ from django.conf import settings
 from django.template.base import TemplateSyntaxError, Library, Node, TextNode,\
     token_kwargs, Variable
 from django.template.loader import get_template
-from django.utils.safestring import mark_safe
 from django.utils import six
+from django.utils.safestring import mark_safe
 
 register = Library()
 

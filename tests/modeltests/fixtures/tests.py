@@ -5,7 +5,6 @@ from django.core import management
 from django.db import connection, IntegrityError
 from django.test import TestCase, TransactionTestCase, skipUnlessDBFeature
 from django.utils import six
-
 from .models import Article, Book, Spy, Tag, Visa
 
 

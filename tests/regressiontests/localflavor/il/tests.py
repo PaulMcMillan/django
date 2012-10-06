@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.contrib.localflavor.il.forms import (ILPostalCodeField,
     ILIDNumberField)
-
 from django.test import SimpleTestCase
 
 

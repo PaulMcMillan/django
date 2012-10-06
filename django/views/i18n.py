@@ -1,14 +1,14 @@
-import os
 import gettext as gettext_module
+import os
 
 from django import http
 from django.conf import settings
 from django.utils import importlib
-from django.utils.translation import check_for_language, activate, to_locale, get_language
-from django.utils.text import javascript_quote
+from django.utils import six
 from django.utils.encoding import smart_text
 from django.utils.formats import get_format_modules, get_format
-from django.utils import six
+from django.utils.text import javascript_quote
+from django.utils.translation import check_for_language, activate, to_locale, get_language
 
 def set_language(request):
     """

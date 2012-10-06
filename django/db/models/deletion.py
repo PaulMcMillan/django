@@ -3,8 +3,8 @@ from operator import attrgetter
 
 from django.db import connections, transaction, IntegrityError
 from django.db.models import signals, sql
-from django.utils.datastructures import SortedDict
 from django.utils import six
+from django.utils.datastructures import SortedDict
 
 
 class ProtectedError(IntegrityError):

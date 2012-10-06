@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 
 from django.conf.urls import patterns
-
 from .feeds import feed_dict
 from .sitemaps import sitemaps
 

@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 
 from django.contrib.localflavor.co.forms import CODepartmentSelect
-
 from django.test import SimpleTestCase
 
 class COLocalFlavorTests(SimpleTestCase):

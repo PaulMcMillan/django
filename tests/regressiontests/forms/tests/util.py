@@ -4,10 +4,10 @@ from __future__ import unicode_literals
 from django.core.exceptions import ValidationError
 from django.forms.util import flatatt, ErrorDict, ErrorList
 from django.test import TestCase
-from django.utils.safestring import mark_safe
 from django.utils import six
-from django.utils.translation import ugettext_lazy
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.safestring import mark_safe
+from django.utils.translation import ugettext_lazy
 
 
 class FormsUtilTestCase(TestCase):

@@ -2,8 +2,8 @@ from __future__ import unicode_literals
 
 import codecs
 import datetime
-from decimal import Decimal
 import locale
+from decimal import Decimal
 try:
     from urllib.parse import quote
 except ImportError:     # Python 2

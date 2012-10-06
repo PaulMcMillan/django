@@ -3,8 +3,8 @@ import sys
 from django.conf import settings
 from django.core.signals import got_request_exception
 from django.http import HttpResponse
-from django.template.response import TemplateResponse
 from django.template import Template
+from django.template.response import TemplateResponse
 from django.test import TestCase
 
 class TestException(Exception):

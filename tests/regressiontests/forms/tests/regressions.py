@@ -3,11 +3,11 @@ from __future__ import unicode_literals
 
 from warnings import catch_warnings
 
+from regressiontests.forms.models import Cheese
+
 from django.forms import *
 from django.test import TestCase
 from django.utils.translation import ugettext_lazy, override
-
-from regressiontests.forms.models import Cheese
 
 
 class FormsRegressionsTestCase(TestCase):

@@ -7,7 +7,6 @@ from django.core.exceptions import MultipleObjectsReturned, FieldError
 from django.test import TestCase
 from django.utils import six
 from django.utils.translation import ugettext_lazy
-
 from .models import Article, Reporter
 
 

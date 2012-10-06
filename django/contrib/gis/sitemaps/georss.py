@@ -1,5 +1,5 @@
-from django.core import urlresolvers
 from django.contrib.sitemaps import Sitemap
+from django.core import urlresolvers
 
 class GeoRSSSitemap(Sitemap):
     """

@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 
 from django.contrib.localflavor.fr.forms import (FRZipCodeField,
         FRPhoneNumberField, FRDepartmentSelect)
-
 from django.test import SimpleTestCase
 
 

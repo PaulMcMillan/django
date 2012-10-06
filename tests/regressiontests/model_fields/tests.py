@@ -3,21 +3,19 @@ from __future__ import absolute_import, unicode_literals
 import datetime
 from decimal import Decimal
 
-from django import test
 from django import forms
+from django import test
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models.fields.files import FieldFile
 from django.utils import six
 from django.utils import unittest
-
-from .models import (Foo, Bar, Whiz, BigD, BigS, Image, BigInt, Post,
-    NullBooleanModel, BooleanModel, Document, RenamedField, VerboseNameField)
-
 from .imagefield import (ImageFieldTests, ImageFieldTwoDimensionsTests,
     TwoImageFieldTests, ImageFieldNoDimensionsTests,
     ImageFieldOneDimensionTests, ImageFieldDimensionsFirstTests,
     ImageFieldUsingFileTests)
+from .models import (Foo, Bar, Whiz, BigD, BigS, Image, BigInt, Post,
+    NullBooleanModel, BooleanModel, Document, RenamedField, VerboseNameField)
 
 
 class BasicFieldTests(test.TestCase):

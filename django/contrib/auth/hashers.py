@@ -3,15 +3,15 @@ from __future__ import unicode_literals
 import base64
 import hashlib
 
-from django.dispatch import receiver
 from django.conf import settings
+from django.core.exceptions import ImproperlyConfigured
+from django.dispatch import receiver
 from django.test.signals import setting_changed
 from django.utils import importlib
-from django.utils.datastructures import SortedDict
-from django.utils.encoding import force_bytes
-from django.core.exceptions import ImproperlyConfigured
 from django.utils.crypto import (
     pbkdf2, constant_time_compare, get_random_string)
+from django.utils.datastructures import SortedDict
+from django.utils.encoding import force_bytes
 from django.utils.translation import ugettext_noop as _
 
 

@@ -1,6 +1,6 @@
-from django.core import urlresolvers
-from django.contrib.sitemaps import Sitemap
 from django.contrib.gis.db.models.fields import GeometryField
+from django.contrib.sitemaps import Sitemap
+from django.core import urlresolvers
 from django.db import models
 
 class KMLSitemap(Sitemap):

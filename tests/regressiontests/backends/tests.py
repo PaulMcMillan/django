@@ -6,20 +6,19 @@ import datetime
 import threading
 
 from django.conf import settings
-from django.core.management.color import no_style
 from django.core.exceptions import ImproperlyConfigured
+from django.core.management.color import no_style
 from django.db import (backend, connection, connections, DEFAULT_DB_ALIAS,
     IntegrityError, transaction)
-from django.db.backends.signals import connection_created
 from django.db.backends.postgresql_psycopg2 import version as pg_version
+from django.db.backends.signals import connection_created
 from django.db.utils import ConnectionHandler, DatabaseError, load_backend
 from django.test import (TestCase, skipUnlessDBFeature, skipIfDBFeature,
     TransactionTestCase)
 from django.test.utils import override_settings
 from django.utils import six
-from django.utils.six.moves import xrange
 from django.utils import unittest
-
+from django.utils.six.moves import xrange
 from . import models
 
 

@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 from datetime import date
 
 from django.test.utils import override_settings
-
 from .base import SitemapTestsBase
 
 class HTTPSSitemapTests(SitemapTestsBase):

@@ -1,17 +1,7 @@
 from __future__ import unicode_literals
+
 import re
 import warnings
-
-from django.core.exceptions import ImproperlyConfigured
-from django.core.mail import send_mail
-from django.core import validators
-from django.db import models
-from django.db.models.manager import EmptyManager
-from django.utils.crypto import get_random_string
-from django.utils.http import urlquote
-from django.utils import six
-from django.utils.translation import ugettext_lazy as _
-from django.utils import timezone
 
 from django.contrib import auth
 # UNUSABLE_PASSWORD is still imported here for backwards compatibility
@@ -19,7 +9,17 @@ from django.contrib.auth.hashers import (
     check_password, make_password, is_password_usable, UNUSABLE_PASSWORD)
 from django.contrib.auth.signals import user_logged_in
 from django.contrib.contenttypes.models import ContentType
+from django.core import validators
+from django.core.exceptions import ImproperlyConfigured
+from django.core.mail import send_mail
+from django.db import models
+from django.db.models.manager import EmptyManager
+from django.utils import six
+from django.utils import timezone
+from django.utils.crypto import get_random_string
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.http import urlquote
+from django.utils.translation import ugettext_lazy as _
 
 
 def update_last_login(sender, user, **kwargs):

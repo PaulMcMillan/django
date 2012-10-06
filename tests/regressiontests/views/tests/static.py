@@ -1,8 +1,10 @@
 from __future__ import absolute_import
 
 import mimetypes
-from os import path
 import unittest
+from os import path
+
+from ..urls import media_dir
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -10,9 +12,7 @@ from django.http import HttpResponseNotModified
 from django.test import TestCase
 from django.utils.http import http_date
 from django.views.static import was_modified_since
-
 from .. import urls
-from ..urls import media_dir
 
 
 class StaticTests(TestCase):

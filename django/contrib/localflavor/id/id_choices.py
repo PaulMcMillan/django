@@ -1,4 +1,5 @@
 import warnings
+
 from django.utils.translation import ugettext_lazy as _
 
 # Reference: http://id.wikipedia.org/wiki/Daftar_provinsi_Indonesia

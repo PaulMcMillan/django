@@ -5,7 +5,6 @@ from django.contrib import admin
 from django.contrib.admin.validation import validate, validate_inline
 from django.core.exceptions import ImproperlyConfigured
 from django.test import TestCase
-
 from .models import Song, Book, Album, TwoAlbumFKAndAnE, State, City
 
 

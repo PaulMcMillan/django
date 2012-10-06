@@ -2,11 +2,11 @@ import hashlib
 import logging
 import re
 
-from django.conf import settings
 from django import http
+from django.conf import settings
+from django.core import urlresolvers
 from django.core.mail import mail_managers
 from django.utils.http import urlquote
-from django.core import urlresolvers
 
 
 logger = logging.getLogger('django.request')

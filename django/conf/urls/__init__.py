@@ -1,8 +1,8 @@
+from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import (RegexURLPattern,
     RegexURLResolver, LocaleRegexURLResolver)
-from django.core.exceptions import ImproperlyConfigured
-from django.utils.importlib import import_module
 from django.utils import six
+from django.utils.importlib import import_module
 
 
 __all__ = ['handler403', 'handler404', 'handler500', 'include', 'patterns', 'url']

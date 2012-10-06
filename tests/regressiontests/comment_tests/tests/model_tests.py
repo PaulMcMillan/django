@@ -1,9 +1,9 @@
 from __future__ import absolute_import
 
-from django.contrib.comments.models import Comment
-
-from . import CommentTestCase
 from ..models import Author, Article
+
+from django.contrib.comments.models import Comment
+from . import CommentTestCase
 
 
 class CommentModelTests(CommentTestCase):

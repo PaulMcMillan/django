@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from django.core.exceptions import FieldError
 from django.test import TestCase
 from django.utils import six
-
 from .models import (SelfRefer, Tag, TagCollection, Entry, SelfReferChild,
     SelfReferChildSibling, Worksheet)
 

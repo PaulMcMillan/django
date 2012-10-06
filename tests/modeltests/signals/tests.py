@@ -4,7 +4,6 @@ from django.db.models import signals
 from django.dispatch import receiver
 from django.test import TestCase
 from django.utils import six
-
 from .models import Person, Car
 
 

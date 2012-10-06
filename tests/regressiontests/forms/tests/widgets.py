@@ -8,12 +8,12 @@ from django.conf import settings
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.forms import *
 from django.forms.widgets import RadioFieldRenderer
-from django.utils import formats
-from django.utils.safestring import mark_safe
-from django.utils import six
-from django.utils.translation import activate, deactivate
 from django.test import TestCase
+from django.utils import formats
+from django.utils import six
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.safestring import mark_safe
+from django.utils.translation import activate, deactivate
 
 
 class FormsWidgetTestCase(TestCase):

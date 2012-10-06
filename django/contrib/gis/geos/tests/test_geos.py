@@ -7,17 +7,16 @@ from binascii import a2b_hex, b2a_hex
 from io import BytesIO
 
 from django.contrib.gis import memoryview
+from django.contrib.gis.geometry.test_data import TestDataMixin
 from django.contrib.gis.geos import (GEOSException, GEOSIndexError, GEOSGeometry,
     GeometryCollection, Point, MultiPoint, Polygon, MultiPolygon, LinearRing,
     LineString, MultiLineString, fromfile, fromstr, geos_version_info)
 from django.contrib.gis.geos.base import gdal, numpy, GEOSBase
 from django.contrib.gis.geos.libgeos import GEOS_PREPARE
-from django.contrib.gis.geometry.test_data import TestDataMixin
-
-from django.utils.encoding import force_bytes
 from django.utils import six
-from django.utils.six.moves import xrange
 from django.utils import unittest
+from django.utils.encoding import force_bytes
+from django.utils.six.moves import xrange
 
 
 class GEOSTest(unittest.TestCase, TestDataMixin):

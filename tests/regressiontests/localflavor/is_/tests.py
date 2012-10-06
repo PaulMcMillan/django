@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.contrib.localflavor.is_.forms import (ISIdNumberField,
     ISPhoneNumberField, ISPostalCodeSelect)
-
 from django.test import SimpleTestCase
 
 

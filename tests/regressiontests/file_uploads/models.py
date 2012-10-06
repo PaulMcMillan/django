@@ -1,5 +1,5 @@
-import tempfile
 import os
+import tempfile
 
 from django.core.files.storage import FileSystemStorage
 from django.db import models

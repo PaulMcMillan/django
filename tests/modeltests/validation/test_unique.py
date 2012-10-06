@@ -5,7 +5,6 @@ import datetime
 from django.core.exceptions import ValidationError
 from django.test import TestCase
 from django.utils import unittest
-
 from .models import (CustomPKModel, UniqueTogetherModel, UniqueFieldsModel,
     UniqueForDateModel, ModelToValidate, Post, FlexibleDatePost,
     UniqueErrorsModel)

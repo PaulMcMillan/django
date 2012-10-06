@@ -1,9 +1,9 @@
 import sys
 
 from django.core.management.color import color_style
+from django.utils import six
 from django.utils.encoding import force_str
 from django.utils.itercompat import is_iterable
-from django.utils import six
 
 
 class ModelErrorCollection:

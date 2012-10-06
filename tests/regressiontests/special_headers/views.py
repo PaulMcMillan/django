@@ -1,9 +1,8 @@
 from django.core.xheaders import populate_xheaders
 from django.http import HttpResponse
+from django.middleware.doc import XViewMiddleware
 from django.utils.decorators import decorator_from_middleware
 from django.views.generic import View
-from django.middleware.doc import XViewMiddleware
-
 from .models import Article
 
 xview_dec = decorator_from_middleware(XViewMiddleware)

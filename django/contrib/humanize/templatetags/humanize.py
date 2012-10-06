@@ -1,4 +1,5 @@
 from __future__ import unicode_literals
+
 import re
 from datetime import date, datetime
 
@@ -7,8 +8,8 @@ from django.conf import settings
 from django.template import defaultfilters
 from django.utils.encoding import force_text
 from django.utils.formats import number_format
-from django.utils.translation import pgettext, ungettext, ugettext as _
 from django.utils.timezone import is_aware, utc
+from django.utils.translation import pgettext, ungettext, ugettext as _
 
 register = template.Library()
 

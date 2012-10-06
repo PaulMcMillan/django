@@ -1,6 +1,7 @@
 import copy
 import warnings
 from types import GeneratorType
+
 from django.utils import six
 
 

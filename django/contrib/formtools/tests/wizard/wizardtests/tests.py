@@ -3,12 +3,12 @@ from __future__ import unicode_literals
 import os
 
 from django import forms
-from django.test import TestCase
-from django.test.client import RequestFactory
 from django.conf import settings
 from django.contrib.auth.models import User
-from django.contrib.formtools.wizard.views import CookieWizardView
 from django.contrib.formtools.tests.wizard.forms import UserForm, UserFormSet
+from django.contrib.formtools.wizard.views import CookieWizardView
+from django.test import TestCase
+from django.test.client import RequestFactory
 
 
 class WizardTests(object):

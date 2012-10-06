@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 
 from django.contrib.localflavor.za.forms import ZAIDField, ZAPostCodeField
-
 from django.test import SimpleTestCase
 
 

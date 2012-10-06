@@ -5,7 +5,6 @@ from django.contrib.localflavor.hr.forms import (HRCountySelect,
     HRPhoneNumberPrefixSelect, HRLicensePlatePrefixSelect, HRPhoneNumberField,
     HRLicensePlateField, HRPostalCodeField, HROIBField, HRJMBGField,
     HRJMBAGField)
-
 from django.test import SimpleTestCase
 
 class HRLocalFlavorTests(SimpleTestCase):

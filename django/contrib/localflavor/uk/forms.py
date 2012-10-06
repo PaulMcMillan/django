@@ -1,6 +1,6 @@
-from django.contrib.localflavor.gb import forms
-
 import warnings
+
+from django.contrib.localflavor.gb import forms
 warnings.warn(
     'The "UK" prefix for United Kingdom has been deprecated in favour of the '
     'GB code. Please use the new GB-prefixed names.', DeprecationWarning)

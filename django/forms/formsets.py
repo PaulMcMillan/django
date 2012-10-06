@@ -5,9 +5,9 @@ from django.forms import Form
 from django.forms.fields import IntegerField, BooleanField
 from django.forms.util import ErrorList
 from django.forms.widgets import Media, HiddenInput
+from django.utils import six
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.safestring import mark_safe
-from django.utils import six
 from django.utils.six.moves import xrange
 from django.utils.translation import ugettext as _
 

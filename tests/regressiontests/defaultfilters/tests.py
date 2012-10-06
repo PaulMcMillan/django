@@ -8,8 +8,8 @@ from django.template.defaultfilters import *
 from django.test import TestCase
 from django.utils import six
 from django.utils import unittest, translation
-from django.utils.safestring import SafeData
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.safestring import SafeData
 
 
 class DefaultFiltersTests(TestCase):

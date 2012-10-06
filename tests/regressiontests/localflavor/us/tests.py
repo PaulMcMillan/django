@@ -4,7 +4,6 @@ from django.contrib.localflavor.us.forms import (USZipCodeField,
     USPhoneNumberField, USStateField, USStateSelect,
     USSocialSecurityNumberField)
 from django.test import SimpleTestCase
-
 from .forms import USPlaceForm
 
 

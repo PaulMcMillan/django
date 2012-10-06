@@ -3,12 +3,10 @@ from django.contrib.gis.gdal.base import GDALBase
 from django.contrib.gis.gdal.error import OGRException, OGRIndexError
 from django.contrib.gis.gdal.field import Field
 from django.contrib.gis.gdal.geometries import OGRGeometry, OGRGeomType
-
 # ctypes function prototypes
 from django.contrib.gis.gdal.prototypes import ds as capi, geom as geom_api
-
-from django.utils.encoding import force_bytes
 from django.utils import six
+from django.utils.encoding import force_bytes
 from django.utils.six.moves import xrange
 
 # For more information, see the OGR C API source code:

@@ -4,8 +4,8 @@ import time
 
 from django.core import signing
 from django.test import TestCase
-from django.utils.encoding import force_str
 from django.utils import six
+from django.utils.encoding import force_str
 
 
 class TestSigner(TestCase):

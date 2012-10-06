@@ -7,20 +7,20 @@ from inspect import getargspec
 from django.conf import settings
 from django.template.context import (Context, RequestContext,
     ContextPopException)
-from django.utils.importlib import import_module
-from django.utils.itercompat import is_iterable
-from django.utils.text import (smart_split, unescape_string_literal,
-    get_text_list)
+from django.utils import six
 from django.utils.encoding import force_str, force_text
-from django.utils.translation import ugettext_lazy, pgettext_lazy
-from django.utils.safestring import (SafeData, EscapeData, mark_safe,
-    mark_for_escaping)
+from django.utils.encoding import python_2_unicode_compatible
 from django.utils.formats import localize
 from django.utils.html import escape
+from django.utils.importlib import import_module
+from django.utils.itercompat import is_iterable
 from django.utils.module_loading import module_has_submodule
-from django.utils import six
+from django.utils.safestring import (SafeData, EscapeData, mark_safe,
+    mark_for_escaping)
+from django.utils.text import (smart_split, unescape_string_literal,
+    get_text_list)
 from django.utils.timezone import template_localtime
-from django.utils.encoding import python_2_unicode_compatible
+from django.utils.translation import ugettext_lazy, pgettext_lazy
 
 
 TOKEN_TEXT = 0

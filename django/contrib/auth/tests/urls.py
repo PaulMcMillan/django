@@ -1,8 +1,8 @@
 from django.conf.urls import patterns, url
 from django.contrib.auth import context_processors
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.urls import urlpatterns
 from django.contrib.auth.views import password_reset
-from django.contrib.auth.decorators import login_required
 from django.contrib.messages.api import info
 from django.http import HttpResponse
 from django.shortcuts import render_to_response

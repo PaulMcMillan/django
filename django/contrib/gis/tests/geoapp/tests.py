@@ -2,19 +2,17 @@ from __future__ import absolute_import
 
 import re
 
-from django.db import connection
-from django.db.utils import DatabaseError
 from django.contrib.gis import gdal
 from django.contrib.gis.geos import (fromstr, GEOSGeometry,
     Point, LineString, LinearRing, Polygon, GeometryCollection)
 from django.contrib.gis.tests.utils import (
     no_mysql, no_oracle, no_spatialite,
     mysql, oracle, postgis, spatialite)
+from django.db import connection
+from django.db.utils import DatabaseError
 from django.test import TestCase
 from django.utils import six
-
 from .models import Country, City, PennsylvaniaCity, State, Track
-
 from .test_feeds import GeoFeedTest
 from .test_regress import GeoRegressionTests
 from .test_sitemaps import GeoSitemapTest

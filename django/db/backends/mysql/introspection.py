@@ -1,7 +1,7 @@
 import re
-from .base import FIELD_TYPE
 
 from django.db.backends import BaseDatabaseIntrospection
+from .base import FIELD_TYPE
 
 
 foreign_key_re = re.compile(r"\sCONSTRAINT `[^`]*` FOREIGN KEY \(`([^`]*)`\) REFERENCES `([^`]*)` \(`([^`]*)`\)")

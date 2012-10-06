@@ -10,14 +10,13 @@ import warnings
 from django import http
 from django.conf import settings
 from django.contrib.formtools import preview, utils
+from django.contrib.formtools.tests.forms import *
+from django.contrib.formtools.tests.wizard import *
 from django.contrib.formtools.wizard import FormWizard
 from django.test import TestCase
 from django.test.html import parse_html
 from django.test.utils import override_settings
 from django.utils import unittest
-
-from django.contrib.formtools.tests.wizard import *
-from django.contrib.formtools.tests.forms import *
 
 success_string = "Done was called!"
 success_string_encoded = success_string.encode()

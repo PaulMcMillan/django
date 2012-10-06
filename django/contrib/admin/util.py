@@ -3,19 +3,19 @@ from __future__ import unicode_literals
 import datetime
 import decimal
 
+from django.core.urlresolvers import reverse
 from django.db import models
 from django.db.models.constants import LOOKUP_SEP
 from django.db.models.deletion import Collector
 from django.db.models.related import RelatedObject
 from django.forms.forms import pretty_name
 from django.utils import formats
-from django.utils.html import format_html
-from django.utils.text import capfirst
+from django.utils import six
 from django.utils import timezone
 from django.utils.encoding import force_str, force_text, smart_text
-from django.utils import six
+from django.utils.html import format_html
+from django.utils.text import capfirst
 from django.utils.translation import ungettext
-from django.core.urlresolvers import reverse
 
 def lookup_needs_distinct(opts, lookup_path):
     """

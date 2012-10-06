@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url
-from django.template import Template, Context
 from django.http import HttpResponse
+from django.template import Template, Context
 
 def inner_view(request):
     content = Template('{% url "outer" as outer_url %}outer:{{ outer_url }},'

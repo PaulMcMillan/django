@@ -1,9 +1,9 @@
-from distutils.core import setup
-from distutils.command.install_data import install_data
-from distutils.command.install import INSTALL_SCHEMES
-from distutils.sysconfig import get_python_lib
 import os
 import sys
+from distutils.command.install import INSTALL_SCHEMES
+from distutils.command.install_data import install_data
+from distutils.core import setup
+from distutils.sysconfig import get_python_lib
 
 # Warn if we are installing over top of an existing installation. This can
 # cause issues where files that were deleted from a more recent Django are

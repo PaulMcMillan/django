@@ -1,10 +1,9 @@
 from __future__ import absolute_import
 
-import pickle
 import datetime
+import pickle
 
 from django.test import TestCase
-
 from .models import Group, Event, Happening
 
 

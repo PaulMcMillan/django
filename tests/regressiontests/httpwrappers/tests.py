@@ -11,9 +11,9 @@ from django.http import (QueryDict, HttpResponse, HttpResponseRedirect,
                          SimpleCookie, BadHeaderError,
                          parse_cookie)
 from django.test import TestCase
-from django.utils.encoding import smart_str
 from django.utils import six
 from django.utils import unittest
+from django.utils.encoding import smart_str
 
 
 class QueryDictTests(unittest.TestCase):

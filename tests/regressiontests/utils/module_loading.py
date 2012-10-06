@@ -1,6 +1,6 @@
+import imp
 import os
 import sys
-import imp
 from zipimport import zipimporter
 
 from django.utils import unittest

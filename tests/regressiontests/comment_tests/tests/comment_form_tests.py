@@ -2,12 +2,12 @@ from __future__ import absolute_import
 
 import time
 
+from ..models import Article
+
 from django.conf import settings
 from django.contrib.comments.forms import CommentForm
 from django.contrib.comments.models import Comment
-
 from . import CommentTestCase
-from ..models import Article
 
 
 class CommentFormTests(CommentTestCase):

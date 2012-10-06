@@ -1,8 +1,7 @@
-from django.utils.translation import ugettext_lazy as _
-from django.db.models.fields import CharField
-
-from django.contrib.localflavor.au.au_states import STATE_CHOICES
 from django.contrib.localflavor.au import forms
+from django.contrib.localflavor.au.au_states import STATE_CHOICES
+from django.db.models.fields import CharField
+from django.utils.translation import ugettext_lazy as _
 
 class AUStateField(CharField):
 

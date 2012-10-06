@@ -1,8 +1,6 @@
-from django.db.backends.mysql.base import DatabaseOperations
-
 from django.contrib.gis.db.backends.adapter import WKTAdapter
 from django.contrib.gis.db.backends.base import BaseSpatialOperations
-
+from django.db.backends.mysql.base import DatabaseOperations
 from django.utils import six
 
 class MySQLOperations(DatabaseOperations, BaseSpatialOperations):

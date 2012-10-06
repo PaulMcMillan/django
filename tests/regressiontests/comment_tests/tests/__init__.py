@@ -1,5 +1,7 @@
 from __future__ import absolute_import
 
+from ..models import Article, Author
+
 from django.contrib.auth.models import User
 from django.contrib.comments.forms import CommentForm
 from django.contrib.comments.models import Comment
@@ -7,8 +9,6 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.sites.models import Site
 from django.test import TestCase
 from django.test.utils import override_settings
-
-from ..models import Article, Author
 
 # Shortcut
 CT = ContentType.objects.get_for_model

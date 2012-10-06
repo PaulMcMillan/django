@@ -1,15 +1,15 @@
 import os
+
 from django.conf import settings
+from django.contrib.staticfiles import utils
+from django.contrib.staticfiles.storage import AppStaticStorage
 from django.core.exceptions import ImproperlyConfigured
 from django.core.files.storage import default_storage, Storage, FileSystemStorage
+from django.utils import six
+from django.utils._os import safe_join
 from django.utils.datastructures import SortedDict
 from django.utils.functional import empty, memoize, LazyObject
 from django.utils.importlib import import_module
-from django.utils._os import safe_join
-from django.utils import six
-
-from django.contrib.staticfiles import utils
-from django.contrib.staticfiles.storage import AppStaticStorage
 
 _finders = SortedDict()
 

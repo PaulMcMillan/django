@@ -1,9 +1,8 @@
 import json
 
+from django.contrib.formtools.wizard import storage
 from django.core.exceptions import SuspiciousOperation
 from django.core.signing import BadSignature
-
-from django.contrib.formtools.wizard import storage
 
 
 class CookieStorage(storage.BaseStorage):

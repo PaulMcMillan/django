@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from django.db.models import Max
 from django.test import TestCase, skipUnlessDBFeature
 from django.test.utils import str_prefix
-
 from .models import Tag, Celebrity, Fan, Staff, StaffTag
 
 class DistinctOnTests(TestCase):

@@ -3,20 +3,20 @@ import os
 import re
 
 from django import template
-from django.template import RequestContext
 from django.conf import settings
 from django.contrib.admin.views.decorators import staff_member_required
-from django.db import models
-from django.shortcuts import render_to_response
-from django.core.exceptions import ImproperlyConfigured, ViewDoesNotExist
-from django.http import Http404
-from django.core import urlresolvers
 from django.contrib.admindocs import utils
 from django.contrib.sites.models import Site
-from django.utils.importlib import import_module
+from django.core import urlresolvers
+from django.core.exceptions import ImproperlyConfigured, ViewDoesNotExist
+from django.db import models
+from django.http import Http404
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 from django.utils import six
-from django.utils.translation import ugettext as _
+from django.utils.importlib import import_module
 from django.utils.safestring import mark_safe
+from django.utils.translation import ugettext as _
 
 # Exclude methods starting with these strings from documentation
 MODEL_METHODS_EXCLUDE = ('_', 'add_', 'delete', 'save', 'set_')

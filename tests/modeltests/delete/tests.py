@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from django.db import models, IntegrityError, connection
 from django.test import TestCase, skipUnlessDBFeature, skipIfDBFeature
 from django.utils.six.moves import xrange
-
 from .models import (R, RChild, S, T, U, A, M, MR, MRNull,
     create_a, get_default_r, User, Avatar, HiddenUser, HiddenUserProfile,
     M2MTo, M2MFrom, Parent, Child, Base)

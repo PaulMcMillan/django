@@ -1,20 +1,20 @@
 from operator import attrgetter
 
+from django import forms
+from django.core import exceptions
 from django.db import connection, router
 from django.db.backends import util
 from django.db.models import signals, get_model
+from django.db.models.deletion import CASCADE
 from django.db.models.fields import (AutoField, Field, IntegerField,
     PositiveIntegerField, PositiveSmallIntegerField, FieldDoesNotExist)
-from django.db.models.related import RelatedObject
 from django.db.models.query import QuerySet
 from django.db.models.query_utils import QueryWrapper
-from django.db.models.deletion import CASCADE
-from django.utils.encoding import smart_text
+from django.db.models.related import RelatedObject
 from django.utils import six
-from django.utils.translation import ugettext_lazy as _, string_concat
+from django.utils.encoding import smart_text
 from django.utils.functional import curry, cached_property
-from django.core import exceptions
-from django import forms
+from django.utils.translation import ugettext_lazy as _, string_concat
 
 
 RECURSIVE_RELATIONSHIP_CONSTANT = 'self'

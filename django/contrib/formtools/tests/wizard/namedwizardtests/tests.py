@@ -1,14 +1,12 @@
 from __future__ import unicode_literals
 
+from django.contrib.auth.models import User
+from django.contrib.formtools.tests.wizard.forms import get_request, Step1, Step2
+from django.contrib.formtools.wizard.views import (NamedUrlSessionWizardView,
+                                                   NamedUrlCookieWizardView)
 from django.core.urlresolvers import reverse
 from django.http import QueryDict
 from django.test import TestCase
-
-from django.contrib.auth.models import User
-
-from django.contrib.formtools.wizard.views import (NamedUrlSessionWizardView,
-                                                   NamedUrlCookieWizardView)
-from django.contrib.formtools.tests.wizard.forms import get_request, Step1, Step2
 
 
 class NamedWizardTests(object):

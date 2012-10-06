@@ -1,4 +1,5 @@
 from __future__ import absolute_import
+
 import copy
 
 from django.conf import settings
@@ -6,7 +7,6 @@ from django.db import models
 from django.db.models.loading import cache
 from django.test import TestCase
 from django.test.utils import override_settings
-
 from .models import (
     Child1,
     Child2,

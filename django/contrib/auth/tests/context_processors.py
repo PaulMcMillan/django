@@ -2,10 +2,10 @@ import os
 
 from django.conf import global_settings
 from django.contrib.auth import authenticate
-from django.contrib.auth.tests.utils import skipIfCustomUser
-from django.contrib.auth.models import User, Permission
-from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.context_processors import PermWrapper, PermLookupDict
+from django.contrib.auth.models import User, Permission
+from django.contrib.auth.tests.utils import skipIfCustomUser
+from django.contrib.contenttypes.models import ContentType
 from django.db.models import Q
 from django.test import TestCase
 from django.test.utils import override_settings

@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.contrib.auth.models import User
 from django.test.utils import override_settings
-
 from .base import SitemapTestsBase
 
 @override_settings(ABSOLUTE_URL_OVERRIDES={})

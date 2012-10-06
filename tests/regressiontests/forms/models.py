@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-import os
 import datetime
+import os
 import tempfile
 
 from django.core.files.storage import FileSystemStorage

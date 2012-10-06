@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 from django.core import management
 from django.db import transaction
 from django.test import TestCase, TransactionTestCase
-
 from .models import Article, Book
 
 

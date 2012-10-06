@@ -1,12 +1,11 @@
 import json
 
-from django.test import TestCase
+from django.contrib.formtools.tests.wizard.storage import get_request, TestStorage
+from django.contrib.formtools.wizard.storage.cookie import CookieStorage
 from django.core import signing
 from django.core.exceptions import SuspiciousOperation
 from django.http import HttpResponse
-
-from django.contrib.formtools.wizard.storage.cookie import CookieStorage
-from django.contrib.formtools.tests.wizard.storage import get_request, TestStorage
+from django.test import TestCase
 
 
 class TestCookieStorage(TestStorage, TestCase):

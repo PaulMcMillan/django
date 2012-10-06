@@ -12,7 +12,6 @@ from django.test import TestCase
 from django.test.client import RequestFactory
 from django.utils import formats
 from django.utils import six
-
 from .admin import (ChildAdmin, QuartetAdmin, BandAdmin, ChordsBandAdmin,
     GroupAdmin, ParentAdmin, DynamicListDisplayChildAdmin,
     DynamicListDisplayLinksChildAdmin, CustomPaginationAdmin,

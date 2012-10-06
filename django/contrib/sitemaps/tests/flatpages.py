@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.conf import settings
 from django.utils.unittest import skipUnless
-
 from .base import SitemapTestsBase
 
 class FlatpagesSitemapTests(SitemapTestsBase):

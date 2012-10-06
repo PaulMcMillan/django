@@ -5,7 +5,6 @@ from operator import attrgetter
 
 from django.core.exceptions import FieldError
 from django.test import TestCase, skipUnlessDBFeature
-
 from .models import Author, Article, Tag, Game, Season, Player
 
 

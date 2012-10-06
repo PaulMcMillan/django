@@ -1,12 +1,11 @@
 from __future__ import absolute_import, unicode_literals
 
-from django.contrib.admin.tests import AdminSeleniumWebDriverTestCase
 from django.contrib.admin.helpers import InlineAdminForm
+from django.contrib.admin.tests import AdminSeleniumWebDriverTestCase
 from django.contrib.auth.models import User, Permission
 from django.contrib.contenttypes.models import ContentType
 from django.test import TestCase
 from django.test.utils import override_settings
-
 # local test models
 from .admin import InnerInline, TitleInline, site
 from .models import (Holder, Inner, Holder2, Inner2, Holder3, Inner3, Person,

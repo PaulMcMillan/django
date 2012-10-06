@@ -1,8 +1,8 @@
 from django import template
-from django.template.loader import render_to_string
 from django.conf import settings
-from django.contrib.contenttypes.models import ContentType
 from django.contrib import comments
+from django.contrib.contenttypes.models import ContentType
+from django.template.loader import render_to_string
 from django.utils.encoding import smart_text
 
 register = template.Library()

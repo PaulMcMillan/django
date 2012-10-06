@@ -1,6 +1,6 @@
+from django.conf import settings
 from django.http import HttpResponseForbidden
 from django.template import Context, Template
-from django.conf import settings
 
 # We include the template inline since we need to be able to reliably display
 # this error message, especially for the sake of developers, and there isn't any

@@ -1,6 +1,5 @@
 from django.contrib.gis import memoryview
 from django.contrib.gis.geos.geometry import GEOSGeometry, wkt_regex, hex_regex
-
 from django.utils import six
 
 

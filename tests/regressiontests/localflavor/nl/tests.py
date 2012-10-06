@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.contrib.localflavor.nl.forms import (NLPhoneNumberField,
     NLZipCodeField, NLSoFiNumberField, NLProvinceSelect)
-
 from django.test import SimpleTestCase
 
 

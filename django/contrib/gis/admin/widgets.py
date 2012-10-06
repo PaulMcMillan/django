@@ -1,11 +1,10 @@
+from django.contrib.gis.gdal import OGRException
+from django.contrib.gis.geos import GEOSGeometry, GEOSException, fromstr
 from django.forms.widgets import Textarea
 from django.template import loader, Context
 from django.templatetags.static import static
 from django.utils import six
 from django.utils import translation
-
-from django.contrib.gis.gdal import OGRException
-from django.contrib.gis.geos import GEOSGeometry, GEOSException, fromstr
 
 # Creating a template context that contains Django settings
 # values needed by admin map templates.

@@ -1,5 +1,5 @@
-from django.db import models
 from django.contrib.comments.models import Comment
+from django.db import models
 
 
 # Regression for #13368. This is an example of a model

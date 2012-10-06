@@ -1,35 +1,36 @@
 from functools import update_wrapper, partial
+
 from django import forms
 from django.conf import settings
-from django.forms.formsets import all_valid
-from django.forms.models import (modelform_factory, modelformset_factory,
-    inlineformset_factory, BaseInlineFormSet)
-from django.contrib.contenttypes.models import ContentType
-from django.contrib.admin import widgets, helpers
-from django.contrib.admin.util import unquote, flatten_fieldsets, get_deleted_objects, model_format_dict
-from django.contrib.admin.templatetags.admin_static import static
 from django.contrib import messages
-from django.views.decorators.csrf import csrf_protect
+from django.contrib.admin import widgets, helpers
+from django.contrib.admin.templatetags.admin_static import static
+from django.contrib.admin.util import unquote, flatten_fieldsets, get_deleted_objects, model_format_dict
+from django.contrib.contenttypes.models import ContentType
 from django.core.exceptions import PermissionDenied, ValidationError
 from django.core.paginator import Paginator
 from django.core.urlresolvers import reverse
 from django.db import models, transaction, router
 from django.db.models.constants import LOOKUP_SEP
-from django.db.models.related import RelatedObject
 from django.db.models.fields import BLANK_CHOICE_DASH, FieldDoesNotExist
+from django.db.models.related import RelatedObject
 from django.db.models.sql.constants import QUERY_TERMS
+from django.forms.formsets import all_valid
+from django.forms.models import (modelform_factory, modelformset_factory,
+    inlineformset_factory, BaseInlineFormSet)
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.template.response import SimpleTemplateResponse, TemplateResponse
-from django.utils.decorators import method_decorator
+from django.utils import six
 from django.utils.datastructures import SortedDict
+from django.utils.decorators import method_decorator
+from django.utils.encoding import force_text
 from django.utils.html import escape, escapejs
 from django.utils.safestring import mark_safe
-from django.utils import six
 from django.utils.text import capfirst, get_text_list
 from django.utils.translation import ugettext as _
 from django.utils.translation import ungettext
-from django.utils.encoding import force_text
+from django.views.decorators.csrf import csrf_protect
 
 HORIZONTAL, VERTICAL = 1, 2
 # returns the <ul> class for a given radio_admin field

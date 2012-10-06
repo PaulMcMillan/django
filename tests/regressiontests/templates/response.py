@@ -5,11 +5,11 @@ import pickle
 import time
 from datetime import datetime
 
-from django.test import RequestFactory, TestCase
 from django.conf import settings
 from django.template import Template, Context
 from django.template.response import (TemplateResponse, SimpleTemplateResponse,
                                       ContentNotRenderedError)
+from django.test import RequestFactory, TestCase
 from django.test.utils import override_settings
 
 def test_processor(request):

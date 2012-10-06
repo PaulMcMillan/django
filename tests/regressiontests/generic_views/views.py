@@ -5,7 +5,6 @@ from django.core.paginator import Paginator
 from django.core.urlresolvers import reverse
 from django.utils.decorators import method_decorator
 from django.views import generic
-
 from .forms import AuthorForm
 from .models import Artist, Author, Book, Page, BookSigning
 

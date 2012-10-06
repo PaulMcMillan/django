@@ -4,7 +4,6 @@ from __future__ import absolute_import, unicode_literals
 from django.contrib.localflavor.mk.forms import (
     MKIdentityCardNumberField, MKMunicipalitySelect, UMCNField)
 from django.test import SimpleTestCase
-
 from .forms import MKPersonForm
 
 

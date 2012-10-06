@@ -1,6 +1,11 @@
 from __future__ import unicode_literals
 
 from django import forms
+from django.contrib.auth import authenticate, get_user_model
+from django.contrib.auth.hashers import UNUSABLE_PASSWORD, identify_hasher
+from django.contrib.auth.models import User
+from django.contrib.auth.tokens import default_token_generator
+from django.contrib.sites.models import get_current_site
 from django.forms.util import flatatt
 from django.template import loader
 from django.utils.datastructures import SortedDict
@@ -9,12 +14,6 @@ from django.utils.http import int_to_base36
 from django.utils.safestring import mark_safe
 from django.utils.text import capfirst
 from django.utils.translation import ugettext, ugettext_lazy as _
-
-from django.contrib.auth import authenticate, get_user_model
-from django.contrib.auth.models import User
-from django.contrib.auth.hashers import UNUSABLE_PASSWORD, identify_hasher
-from django.contrib.auth.tokens import default_token_generator
-from django.contrib.sites.models import get_current_site
 
 
 UNMASKED_DIGITS_TO_SHOW = 6

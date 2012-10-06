@@ -1,7 +1,7 @@
 from django.test import LiveServerTestCase
 from django.utils.importlib import import_module
-from django.utils.unittest import SkipTest
 from django.utils.translation import ugettext as _
+from django.utils.unittest import SkipTest
 
 class AdminSeleniumWebDriverTestCase(LiveServerTestCase):
     webdriver_class = 'selenium.webdriver.firefox.webdriver.WebDriver'

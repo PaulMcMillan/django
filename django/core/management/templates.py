@@ -1,4 +1,5 @@
 import cgi
+import codecs
 import errno
 import mimetypes
 import os
@@ -8,7 +9,6 @@ import shutil
 import stat
 import sys
 import tempfile
-import codecs
 
 try:
     from urllib.request import urlretrieve

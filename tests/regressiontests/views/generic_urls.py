@@ -3,7 +3,6 @@ from __future__ import absolute_import, unicode_literals
 
 from django.conf.urls import patterns, url
 from django.views.generic import RedirectView
-
 from . import views
 from .models import Article, DateArticle, UrlArticle
 

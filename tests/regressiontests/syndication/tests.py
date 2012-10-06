@@ -7,7 +7,6 @@ from django.core.exceptions import ImproperlyConfigured
 from django.test import TestCase
 from django.utils import tzinfo
 from django.utils.feedgenerator import rfc2822_date, rfc3339_date
-
 from .models import Entry
 
 

@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from django.core.exceptions import ImproperlyConfigured
 from django.test import TestCase
 from django.views.generic.base import View
-
 from .models import Artist, Author, Page
 
 

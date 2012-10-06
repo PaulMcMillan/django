@@ -1,4 +1,5 @@
 from __future__ import absolute_import, unicode_literals
+
 import copy
 
 from django.conf import settings
@@ -9,8 +10,6 @@ from django.db import models, DEFAULT_DB_ALIAS
 from django.db.models import signals
 from django.db.models.loading import cache
 from django.test import TestCase
-
-
 from .models import (MyPerson, Person, StatusPerson, LowerStatusPerson,
     MyPersonProxy, Abstract, OtherPerson, User, UserProxy, UserProxyProxy,
     Country, State, StateProxy, TrackerUser, BaseUser, Bug, ProxyTrackerUser,

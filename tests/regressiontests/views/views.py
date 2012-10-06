@@ -7,11 +7,10 @@ from django.core.urlresolvers import get_resolver
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, render
 from django.template import Context, RequestContext, TemplateDoesNotExist
+from django.utils.log import getLogger
 from django.views.debug import technical_500_response, SafeExceptionReporterFilter
 from django.views.decorators.debug import (sensitive_post_parameters,
                                            sensitive_variables)
-from django.utils.log import getLogger
-
 from . import BrokenException, except_args
 
 

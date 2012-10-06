@@ -1,10 +1,10 @@
 from __future__ import absolute_import, unicode_literals
 
+from ..models import Author, Article, UrlArticle
+
 from django.contrib.contenttypes.models import ContentType
 from django.test import TestCase
 from django.test.utils import setup_test_template_loader, restore_template_loaders
-
-from ..models import Author, Article, UrlArticle
 
 
 class DefaultsTests(TestCase):

@@ -1,14 +1,14 @@
 from __future__ import unicode_literals
 
 from django import http
-from django.db import models
 from django.contrib.databrowse.datastructures import EasyModel
 from django.contrib.databrowse.sites import DatabrowsePlugin
+from django.db import models
 from django.shortcuts import render_to_response
+from django.utils.encoding import force_text
 from django.utils.html import format_html, format_html_join
 from django.utils.http import urlquote
 from django.utils.text import capfirst
-from django.utils.encoding import force_text
 
 
 class FieldChoicePlugin(DatabrowsePlugin):

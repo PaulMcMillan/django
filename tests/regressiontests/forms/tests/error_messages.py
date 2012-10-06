@@ -4,8 +4,8 @@ from __future__ import absolute_import, unicode_literals
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.forms import *
 from django.test import TestCase
-from django.utils.safestring import mark_safe
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.safestring import mark_safe
 
 
 class AssertFormErrorsMixin(object):

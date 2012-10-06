@@ -11,7 +11,6 @@ from django.core.exceptions import ImproperlyConfigured
 from django.test import TestCase, RequestFactory
 from django.test.utils import override_settings, six
 from django.utils.encoding import force_text
-
 from .models import Book, Department, Employee
 
 

@@ -1,9 +1,8 @@
 # -*- coding:utf-8 -*-
 from __future__ import absolute_import
 
-from django.views.decorators.http import condition, etag, last_modified
 from django.http import HttpResponse
-
+from django.views.decorators.http import condition, etag, last_modified
 from .models import FULL_RESPONSE, LAST_MODIFIED, ETAG
 
 

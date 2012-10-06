@@ -5,7 +5,6 @@ from django.core.urlresolvers import reverse
 from django.template.response import TemplateResponse
 from django.test import TestCase
 from django.test.utils import override_settings
-
 from .models import Action
 
 

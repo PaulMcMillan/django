@@ -1,13 +1,12 @@
 from __future__ import absolute_import
 
+from django import forms
 from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import reverse
-from django import forms
 from django.test import TestCase
 from django.utils.unittest import expectedFailure
 from django.views.generic.base import View
 from django.views.generic.edit import FormMixin
-
 from . import views
 from .models import Artist, Author
 

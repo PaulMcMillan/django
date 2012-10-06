@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import datetime
+
 from django.contrib.localflavor.se.forms import (SECountySelect,
     SEOrganisationNumberField, SEPersonalIdentityNumberField,
     SEPostalCodeField)
-import datetime
-
 from django.test import SimpleTestCase
 
 

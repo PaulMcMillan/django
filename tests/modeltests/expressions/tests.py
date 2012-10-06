@@ -4,7 +4,6 @@ from django.core.exceptions import FieldError
 from django.db.models import F
 from django.test import TestCase
 from django.utils import six
-
 from .models import Company, Employee
 
 

@@ -1,11 +1,11 @@
 from __future__ import absolute_import
 
+from ..models import Article, Author
+
 from django.contrib.comments.forms import CommentForm
 from django.contrib.comments.models import Comment
 from django.contrib.contenttypes.models import ContentType
 from django.template import Template, Context
-
-from ..models import Article, Author
 from . import CommentTestCase
 
 

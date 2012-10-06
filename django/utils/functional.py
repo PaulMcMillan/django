@@ -1,7 +1,7 @@
 import copy
 import operator
-from functools import wraps, update_wrapper
 import sys
+from functools import wraps, update_wrapper
 
 from django.utils import six
 

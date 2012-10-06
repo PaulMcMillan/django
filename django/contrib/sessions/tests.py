@@ -1,17 +1,17 @@
-from datetime import timedelta
 import shutil
 import string
 import tempfile
 import warnings
+from datetime import timedelta
 
 from django.conf import settings
-from django.contrib.sessions.backends.db import SessionStore as DatabaseSession
 from django.contrib.sessions.backends.cache import SessionStore as CacheSession
 from django.contrib.sessions.backends.cached_db import SessionStore as CacheDBSession
+from django.contrib.sessions.backends.db import SessionStore as DatabaseSession
 from django.contrib.sessions.backends.file import SessionStore as FileSession
 from django.contrib.sessions.backends.signed_cookies import SessionStore as CookieSession
-from django.contrib.sessions.models import Session
 from django.contrib.sessions.middleware import SessionMiddleware
+from django.contrib.sessions.models import Session
 from django.core.cache import DEFAULT_CACHE_ALIAS
 from django.core.exceptions import ImproperlyConfigured, SuspiciousOperation
 from django.http import HttpResponse

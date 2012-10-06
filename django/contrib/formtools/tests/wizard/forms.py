@@ -2,15 +2,13 @@ from __future__ import unicode_literals
 
 from django import forms, http
 from django.conf import settings
-from django.test import TestCase
-from django.template.response import TemplateResponse
-from django.utils.importlib import import_module
-
 from django.contrib.auth.models import User
-
 from django.contrib.formtools.wizard.views import (WizardView,
                                                    SessionWizardView,
                                                    CookieWizardView)
+from django.template.response import TemplateResponse
+from django.test import TestCase
+from django.utils.importlib import import_module
 
 
 class DummyRequest(http.HttpRequest):

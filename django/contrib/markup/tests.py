@@ -2,8 +2,8 @@
 import re
 import warnings
 
-from django.template import Template, Context
 from django import test
+from django.template import Template, Context
 from django.utils import unittest
 from django.utils.html import escape
 

@@ -1,5 +1,5 @@
-import weakref
 import threading
+import weakref
 
 from django.dispatch import saferef
 from django.utils.six.moves import xrange

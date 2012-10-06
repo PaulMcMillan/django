@@ -1,8 +1,8 @@
 from django.conf import settings
+from django.contrib.comments.forms import CommentForm
+from django.contrib.comments.models import Comment
 from django.core import urlresolvers
 from django.core.exceptions import ImproperlyConfigured
-from django.contrib.comments.models import Comment
-from django.contrib.comments.forms import CommentForm
 from django.utils.importlib import import_module
 
 DEFAULT_COMMENTS_APP = 'django.contrib.comments'

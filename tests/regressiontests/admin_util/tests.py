@@ -2,6 +2,7 @@ from __future__ import absolute_import, unicode_literals
 
 from datetime import datetime
 
+from django import forms
 from django.conf import settings
 from django.contrib import admin
 from django.contrib.admin import helpers
@@ -10,13 +11,11 @@ from django.contrib.admin.util import (display_for_field, label_for_field,
 from django.contrib.admin.views.main import EMPTY_CHANGELIST_VALUE
 from django.contrib.sites.models import Site
 from django.db import models, DEFAULT_DB_ALIAS
-from django import forms
 from django.test import TestCase
+from django.utils import six
 from django.utils import unittest
 from django.utils.formats import localize
 from django.utils.safestring import mark_safe
-from django.utils import six
-
 from .models import Article, Count, Event, Location, EventGuide
 
 

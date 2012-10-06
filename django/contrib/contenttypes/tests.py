@@ -1,14 +1,14 @@
 from __future__ import unicode_literals
 
-from django.db import models
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.views import shortcut
 from django.contrib.sites.models import Site, get_current_site
+from django.db import models
 from django.http import HttpRequest, Http404
 from django.test import TestCase
-from django.utils.http import urlquote
 from django.utils import six
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.http import urlquote
 
 
 class ConcreteModel(models.Model):

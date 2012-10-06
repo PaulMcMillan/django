@@ -1,20 +1,20 @@
 from __future__ import unicode_literals
 
 from django import forms
+from django.conf import settings
+from django.contrib.admin.templatetags.admin_static import static
 from django.contrib.admin.util import (flatten_fieldsets, lookup_field,
     display_for_field, label_for_field, help_text_for_field)
-from django.contrib.admin.templatetags.admin_static import static
 from django.contrib.contenttypes.models import ContentType
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models.fields.related import ManyToManyRel
 from django.forms.util import flatatt
 from django.template.defaultfilters import capfirst
+from django.utils import six
 from django.utils.encoding import force_text, smart_text
 from django.utils.html import conditional_escape, format_html
 from django.utils.safestring import mark_safe
-from django.utils import six
 from django.utils.translation import ugettext_lazy as _
-from django.conf import settings
 
 
 ACTION_CHECKBOX_NAME = '_selected_action'

@@ -6,16 +6,16 @@ import random
 import time
 from email import charset as Charset, encoders as Encoders
 from email.generator import Generator
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
 from email.header import Header
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from email.utils import formatdate, getaddresses, formataddr, parseaddr
 
 from django.conf import settings
 from django.core.mail.utils import DNS_NAME
-from django.utils.encoding import force_text
 from django.utils import six
+from django.utils.encoding import force_text
 
 
 # Don't BASE64-encode UTF-8 messages so that we avoid unwanted attention from

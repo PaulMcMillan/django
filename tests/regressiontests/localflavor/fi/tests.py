@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.contrib.localflavor.fi.forms import (FIZipCodeField,
     FISocialSecurityNumber, FIMunicipalitySelect)
-
 from django.test import SimpleTestCase
 
 

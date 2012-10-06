@@ -11,7 +11,6 @@ from django.forms.models import (_get_foreign_key, inlineformset_factory,
     modelformset_factory)
 from django.test import TestCase, skipUnlessDBFeature
 from django.utils import six
-
 from .models import (Author, BetterAuthor, Book, BookWithCustomPK,
     BookWithOptionalAltEditor, AlternateBook, AuthorMeeting, CustomPrimaryKey,
     Place, Owner, Location, OwnerProfile, Restaurant, Product, Price,

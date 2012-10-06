@@ -1,12 +1,12 @@
-from datetime import datetime
 import sys
+from datetime import datetime
 
 from django.http import HttpResponse, utils
 from django.test import RequestFactory
-from django.utils.datastructures import MultiValueDict
 from django.utils import http
 from django.utils import six
 from django.utils import unittest
+from django.utils.datastructures import MultiValueDict
 
 
 class TestUtilsHttp(unittest.TestCase):

@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.contrib.localflavor.jp.forms import (JPPostalCodeField,
     JPPrefectureSelect)
-
 from django.test import SimpleTestCase
 
 

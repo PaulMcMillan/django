@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 
 from django.contrib.localflavor.ie.forms import IECountySelect
-
 from django.test import SimpleTestCase
 
 

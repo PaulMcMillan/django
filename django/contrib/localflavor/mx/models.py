@@ -1,9 +1,8 @@
-from django.utils.translation import ugettext_lazy as _
-from django.db.models.fields import CharField
-
-from django.contrib.localflavor.mx.mx_states import STATE_CHOICES
 from django.contrib.localflavor.mx.forms import (MXRFCField as MXRFCFormField,
     MXZipCodeField as MXZipCodeFormField, MXCURPField as MXCURPFormField)
+from django.contrib.localflavor.mx.mx_states import STATE_CHOICES
+from django.db.models.fields import CharField
+from django.utils.translation import ugettext_lazy as _
 
 
 class MXStateField(CharField):

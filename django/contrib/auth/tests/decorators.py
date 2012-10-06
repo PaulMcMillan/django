@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.tests.views import AuthViewsTestCase
 from django.contrib.auth.tests.utils import skipIfCustomUser
+from django.contrib.auth.tests.views import AuthViewsTestCase
 
 
 @skipIfCustomUser

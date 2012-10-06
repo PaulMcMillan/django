@@ -1,13 +1,13 @@
-import decimal
 import datetime
+import decimal
 
 from django.conf import settings
 from django.utils import dateformat, numberformat, datetime_safe
-from django.utils.importlib import import_module
+from django.utils import six
 from django.utils.encoding import force_str
 from django.utils.functional import lazy
+from django.utils.importlib import import_module
 from django.utils.safestring import mark_safe
-from django.utils import six
 from django.utils.translation import get_language, to_locale, check_for_language
 
 # format_cache is a mapping from (format_type, lang) to the format string.

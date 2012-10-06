@@ -4,7 +4,6 @@ from datetime import datetime
 from operator import attrgetter
 
 from django.test import TestCase
-
 from .models import Article, ArticlePKOrdering
 
 

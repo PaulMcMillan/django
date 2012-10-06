@@ -9,7 +9,6 @@ from django.db.utils import ConnectionHandler, DEFAULT_DB_ALIAS, DatabaseError
 from django.test import (TransactionTestCase, skipIfDBFeature,
     skipUnlessDBFeature)
 from django.utils import unittest
-
 from .models import Person
 
 # Some tests require threading, which might not be available. So create a

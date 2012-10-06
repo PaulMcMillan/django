@@ -9,7 +9,6 @@ from django.contrib.contenttypes.generic import (
 from django.forms.models import ModelForm
 from django.test import TestCase
 from django.test.utils import override_settings
-
 # local test models
 from .admin import MediaInline, MediaPermanentInline
 from .models import (Episode, EpisodeExtra, EpisodeMaxNum, Media,

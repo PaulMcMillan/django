@@ -7,7 +7,6 @@ from django.http import HttpResponse
 from django.test import TestCase, RequestFactory
 from django.utils import unittest
 from django.views.generic import View, TemplateView, RedirectView
-
 from . import views
 
 class SimpleView(View):

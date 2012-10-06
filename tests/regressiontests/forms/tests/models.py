@@ -9,7 +9,6 @@ from django.forms import Form, ModelForm, FileField, ModelChoiceField
 from django.forms.models import ModelFormMetaclass
 from django.test import TestCase
 from django.utils import six
-
 from ..models import (ChoiceOptionModel, ChoiceFieldModel, FileModel, Group,
     BoundaryModel, Defaults, OptionalMultiChoiceModel)
 

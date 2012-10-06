@@ -7,7 +7,6 @@ from django.core.files import File
 from django.core.files.images import ImageFile
 from django.test import TestCase
 from django.utils.unittest import skipIf
-
 from .models import Image
 
 if Image:

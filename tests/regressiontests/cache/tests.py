@@ -31,7 +31,6 @@ from django.utils.cache import (patch_vary_headers, get_cache_key,
     learn_cache_key, patch_cache_control, patch_response_headers)
 from django.utils.encoding import force_text
 from django.views.decorators.cache import cache_page
-
 from .models import Poll, expensive_calculation
 
 # functions/classes for complex data type tests

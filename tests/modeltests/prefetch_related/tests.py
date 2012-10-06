@@ -5,7 +5,6 @@ from django.db import connection
 from django.test import TestCase
 from django.test.utils import override_settings
 from django.utils import six
-
 from .models import (Author, Book, Reader, Qualification, Teacher, Department,
     TaggedItem, Bookmark, AuthorAddress, FavoriteAuthors, AuthorWithAge,
     BookWithYear, BookReview, Person, House, Room, Employee, Comment)

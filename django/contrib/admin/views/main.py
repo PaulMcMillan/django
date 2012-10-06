@@ -1,6 +1,10 @@
 import operator
 from functools import reduce
 
+from django.contrib.admin import FieldListFilter
+from django.contrib.admin.options import IncorrectLookupParameters
+from django.contrib.admin.util import (quote, get_fields_from_path,
+    lookup_needs_distinct, prepare_lookup_value)
 from django.core.exceptions import SuspiciousOperation, ImproperlyConfigured
 from django.core.paginator import InvalidPage
 from django.core.urlresolvers import reverse
@@ -8,13 +12,8 @@ from django.db import models
 from django.db.models.fields import FieldDoesNotExist
 from django.utils.datastructures import SortedDict
 from django.utils.encoding import force_str, force_text
-from django.utils.translation import ugettext, ugettext_lazy
 from django.utils.http import urlencode
-
-from django.contrib.admin import FieldListFilter
-from django.contrib.admin.options import IncorrectLookupParameters
-from django.contrib.admin.util import (quote, get_fields_from_path,
-    lookup_needs_distinct, prepare_lookup_value)
+from django.utils.translation import ugettext, ugettext_lazy
 
 # Changelist settings
 ALL_VAR = 'all'

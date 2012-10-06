@@ -3,15 +3,13 @@ import tempfile
 
 from django import forms
 from django.contrib.auth.models import User
+from django.contrib.auth.models import User
+from django.contrib.formtools.wizard.views import WizardView
 from django.core.files.storage import FileSystemStorage
 from django.forms.formsets import formset_factory
 from django.forms.models import modelformset_factory
 from django.http import HttpResponse
 from django.template import Template, Context
-
-from django.contrib.auth.models import User
-
-from django.contrib.formtools.wizard.views import WizardView
 
 temp_storage_location = tempfile.mkdtemp(dir=os.environ.get('DJANGO_TEST_TEMP_DIR'))
 temp_storage = FileSystemStorage(location=temp_storage_location)

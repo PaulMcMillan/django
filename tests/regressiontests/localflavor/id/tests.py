@@ -5,7 +5,6 @@ import warnings
 from django.contrib.localflavor.id.forms import (IDPhoneNumberField,
     IDPostCodeField, IDNationalIdentityNumberField, IDLicensePlateField,
     IDProvinceSelect, IDLicensePlatePrefixSelect)
-
 from django.test import SimpleTestCase
 
 

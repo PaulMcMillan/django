@@ -12,10 +12,10 @@ from django.http import (HttpResponse, HttpResponseServerError,
     HttpResponseNotFound, HttpRequest, build_request_repr)
 from django.template import Template, Context, TemplateDoesNotExist
 from django.template.defaultfilters import force_escape, pprint
+from django.utils import six
+from django.utils.encoding import force_bytes, smart_text
 from django.utils.html import escape
 from django.utils.importlib import import_module
-from django.utils.encoding import force_bytes, smart_text
-from django.utils import six
 
 HIDDEN_SETTINGS = re.compile('API|TOKEN|KEY|SECRET|PASS|PROFANITIES_LIST|SIGNATURE')
 

@@ -1,12 +1,12 @@
 from __future__ import absolute_import
 
+from ..models import Entry
+
 from django.contrib.comments.models import Comment
 from django.contrib.comments.moderation import (moderator, CommentModerator,
     AlreadyModerated)
 from django.core import mail
-
 from . import CommentTestCase
-from ..models import Entry
 
 
 class EntryModerator1(CommentModerator):

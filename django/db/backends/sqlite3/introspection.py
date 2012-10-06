@@ -1,4 +1,5 @@
 import re
+
 from django.db.backends import BaseDatabaseIntrospection
 
 field_size_re = re.compile(r'^\s*(?:var)?char\s*\(\s*(\d+)\s*\)\s*$')

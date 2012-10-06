@@ -8,20 +8,20 @@ import math
 import warnings
 from itertools import tee
 
+from django import forms
+from django.conf import settings
+from django.core import exceptions, validators
 from django.db import connection
 from django.db.models.query_utils import QueryWrapper
-from django.conf import settings
-from django import forms
-from django.core import exceptions, validators
+from django.utils import six
+from django.utils import timezone
 from django.utils.datastructures import DictWrapper
 from django.utils.dateparse import parse_date, parse_datetime, parse_time
-from django.utils.functional import curry, total_ordering
-from django.utils.text import capfirst
-from django.utils import timezone
-from django.utils.translation import ugettext_lazy as _
 from django.utils.encoding import smart_text, force_text
+from django.utils.functional import curry, total_ordering
 from django.utils.ipv6 import clean_ipv6_address
-from django.utils import six
+from django.utils.text import capfirst
+from django.utils.translation import ugettext_lazy as _
 
 class NOT_PROVIDED:
     pass

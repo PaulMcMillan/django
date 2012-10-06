@@ -7,7 +7,6 @@ from django.core.exceptions import ValidationError
 from django.test import TestCase, skipUnlessDBFeature
 from django.utils import six
 from django.utils import tzinfo
-
 from .models import (Worker, Article, Party, Event, Department,
     BrokenUnicodeMethod, NonAutoPK, Model1, Model2, Model3)
 
